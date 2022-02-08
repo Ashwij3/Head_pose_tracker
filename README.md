@@ -14,7 +14,7 @@ Initially Dlib's facial landmark model was used, but failed to perform well for 
 ![System Monitor](images/landamark.png)
 
 ### Pose estimation
-Pose of an object refers to its relative orientation and position with respect to a camera. For this project, the nose tip, chin, extreme left and right points of lips, and the left corner of the left eye and right corner of the right eye are the six points of the face that we need. We estimate the rational and translational vectors at the nose tip using standard 3D coordinates of these facial landmarks. We can project those 3D points onto a 2D surface, which is our image, after we have the needed vectors.
+The pose of an object refers to its relative orientation and position with respect to a camera. For this project, the nose tip, chin, extreme left and right points of lips, and the left corner of the left eye and right corner of the right eye are the six points of the face that we need. We estimate the rotational and translational vectors at the nose tip using standard 3D coordinates of these facial landmarks. We can project those 3D points onto a 2D surface, which is our image, after we have the needed vectors.
 ## Basic Instruction
 ### Dependencies
 
