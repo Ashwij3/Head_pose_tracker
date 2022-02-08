@@ -4,16 +4,19 @@ import facial_landmark
 import numpy as np
 import tensorflow as tf
 import math
+import os
+
 
 if __name__ == "__main__":
-
+    dir = os.getcwd()
+    dir = dir + "/../models/"
     #load model for face detection
-    model = "models/opencv_face_detector_uint8.pb"
-    config = "models/opencv_face_detector.pbtxt"
+    model = dir + "opencv_face_detector_uint8.pb"
+    config = dir + "opencv_face_detector.pbtxt"
     face_detection_model = cv2.dnn.readNetFromTensorflow(model, config)    
     
     #Load model for landmark detection
-    saved_model='models/pose_model'
+    saved_model=dir + 'pose_model'
     landmark_model = tf.saved_model.load(saved_model)
     
     #Estimated 3D points of face key points
