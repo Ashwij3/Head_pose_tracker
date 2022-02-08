@@ -5,13 +5,13 @@ The following repository contains the code for head pose tracking. This can be u
 ## Description 
 Head pose estimation is a challenging problem because of the various steps required to solve it.Head pose is an important cue in computer vision when using facial information. Firstly, we need to locate the face in the frame and then the various facial landmarks. In this project, real time human head pose estimation using TensorFlow and OpenCV has been implemented
 ## Getting Started
-###Face detection
+### Face detection
 First step is to find the faces in the images on which we can find facial landmarks.Initially Haar Cascade Face Detector was used. However, it fails to detect side faces. Dlib's frontal face HOG detector did not give very good results as well. For this task, 8 bit quantized tensorflow model of OpenCV’s DNN module is used. It is based on Single-Shot-Multibox detector and uses ResNet-10 Architecture as backbone.
 
-###Face landmark detection
+### Face landmark detection
 Initially Dlib's facial landmark model was used, but failed to perform well for side faces.Later, facial landmarks detection based on convolution neural network was implemented. It provides 68 landmarks on the face. Here is a sample image showing the detection result.
 
-###Pose estimation
+### Pose estimation
 Pose of an object refers to its relative orientation and position with respect to a camera. For this project, the nose tip, chin, extreme left and right points of lips, and the left corner of the left eye and right corner of the right eye are the six points of the face that we need. We estimate the rational and translational vectors at the nose tip using standard 3D coordinates of these facial landmarks. We can project those 3D points onto a 2D surface, which is our image, after we have the needed vectors.
 
 ### Dependencies
