@@ -26,7 +26,7 @@ Pose of an object refers to its relative orientation and position with respect t
 
 For more necessary packages please refer to packages.txt in the repository
 ```
-pip install -r packages.txt
+pip install -r requirements.txt
 ```
 
 ### Installing
