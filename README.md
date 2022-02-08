@@ -10,6 +10,7 @@ First step is to find the faces in the images on which we can find facial landma
 
 ### Face landmark detection
 Initially Dlib's facial landmark model was used, but failed to perform well for side faces.Later, facial landmarks detection based on convolution neural network was implemented. It provides 68 landmarks on the face. Here is a sample image showing the detection result.
+![System Monitor](images/System_monitor.png)
 
 ### Pose estimation
 Pose of an object refers to its relative orientation and position with respect to a camera. For this project, the nose tip, chin, extreme left and right points of lips, and the left corner of the left eye and right corner of the right eye are the six points of the face that we need. We estimate the rational and translational vectors at the nose tip using standard 3D coordinates of these facial landmarks. We can project those 3D points onto a 2D surface, which is our image, after we have the needed vectors.
