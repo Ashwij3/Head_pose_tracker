@@ -34,8 +34,7 @@ pip install -r requirements.txt
 2. Before running install all the necessary dependencies in your coding environment using terminal.
 
 ### Executing program
-
-* Simply run the program using compile and run.
-* Before executing wear a face mask.
-* The camera will start and it will be able to detect facemask and key features. Then would keep tracking the feature points in the frame.
-* It will show No Mask in the terminal if the person is not wearing the mask. 
+```
+cd Head_pose_tracker/scripts
+python3 main.py
+```
