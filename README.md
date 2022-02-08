@@ -34,6 +34,7 @@ pip install -r requirements.txt
 2. Before running install all the necessary dependencies in your coding environment using terminal.
 
 ### Executing program
+* Sit facing the camera and execute the program with the following command:
 ```
 cd Head_pose_tracker/scripts
 python3 main.py
