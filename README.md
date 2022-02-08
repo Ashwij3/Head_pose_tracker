@@ -32,7 +32,6 @@ pip install -r packages.txt
 ### Installing
 1. Clone the project repository: `git clone https://github.com/Ashwij3/Head_pose_tracker.git`
 2. Before running install all the necessary dependencies in your coding environment using terminal.
-3. Execute the main.py file
 
 ### Executing program
 
