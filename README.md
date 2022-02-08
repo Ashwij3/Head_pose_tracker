@@ -7,6 +7,7 @@ Head pose estimation is a challenging problem because of the various steps requi
 ## Getting Started
 ### Face detection
 First step is to find the faces in the images on which we can find facial landmarks.Initially Haar Cascade Face Detector was used. However, it fails to detect side faces. Dlib's frontal face HOG detector did not give very good results as well. For this task, 8 bit quantized tensorflow model of OpenCV’s DNN module is used. It is based on Single-Shot-Multibox detector and uses ResNet-10 Architecture as backbone.
+![System Monitor](images/face_detection.png)
 
 ### Face landmark detection
 Initially Dlib's facial landmark model was used, but failed to perform well for side faces.Later, facial landmarks detection based on convolution neural network was implemented. It provides 68 landmarks on the face. Here is a sample image showing the detection result.
