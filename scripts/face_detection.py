@@ -69,8 +69,6 @@ def detect_face(image,model):
             w = int(pred_faces[0, 0, i, 5]*image.shape[1])
             h = int(pred_faces[0, 0, i, 6] *image.shape[0])
             area=(w-x)*(h-y)
-            print(area)
-            print(roi_area)
             # discard the faces which is less than 10% area of the ROI
             if((area/roi_area)>=0.1):    
                 faces.append([x,y,w,h])
